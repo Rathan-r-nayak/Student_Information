@@ -1,0 +1,250 @@
+{% extends "main.html" %}
+
+{%block font%}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
+
+{% comment %} <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Secular+One&display=swap" rel="stylesheet"> {% endcomment %}
+
+
+{%endblock font%}
+
+
+<style>
+{%block subcss %}
+
+  .div_sdet{
+        padding: 10px;
+        margin: 20px;
+        justify-content: center;
+    }
+    h3{
+        font-family: 'Frijole', cursive;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        color: rgb(22, 22, 139);
+        
+    }
+label{
+    font-family:"Courier New", monospace;
+    padding: 10px;
+    font-size: 25px;
+    /* border: 0.5px solid black; */
+    border-radius: 5px;
+    width: 300px;
+    margin: 5px 25px 5px 15px;
+    color: rgb(119, 117, 117)
+
+    
+
+  }
+  input[type=text], input[type=password] {
+        font-family: 'Carter One', cursive;
+        font-size: 20px;
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        /* border: 1px solid aqua; */
+        box-sizing: border-box;
+        background-color: rgba(128, 128, 128, 0.312);
+        border: 2px solid rgba(0, 0, 0, 0);
+        border-radius: 5px;
+        color:black;
+    }
+
+    button {
+        font-family: 'Carter One', cursive;
+        font-size: 18px;
+/* font-family: 'Secular One', sans-serif; */
+        background-color:blue;
+        border:solid 1px blue;
+        color: white;
+        padding: 14px 20px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    button:hover{
+        background-color:rgb(4, 4, 224);
+    }
+    #submit_btn{
+        display: flex;
+        justify-content: center;
+    }
+    #hr{
+        margin-left: -10px;
+        margin-right: -10px;
+        color: aqua;
+    }
+    table{
+	font-family: 'Carter One', cursive;
+}
+.th{
+	background-color: #12214a;
+	color: white;
+	padding: 10px;
+	/* width: 100%; */
+}
+.td{
+	padding: 5px;
+	background-color: rgba(220, 220, 220, 0.622);
+	justify-content: center;
+}
+caption{
+    font-family: 'Frijole', cursive;
+	background-color: #12214a;
+	color: aqua;
+	font-weight: bold;
+	padding: 10px;
+}
+.btn_edit_del {
+    all: unset;
+    cursor: pointer;
+}
+.btn_edit_del:hover{
+    background-color: rgba(240, 248, 255, 0);
+}
+
+.btn_edit_del:focus {
+    outline: orange 5px auto;
+}
+.tables{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#usn{
+    font-family: 'Carter One', cursive;
+        font-size: 20px;
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        /* border: 1px solid aqua; */
+        box-sizing: border-box;
+        background-color: rgba(179, 225, 244, 0.316);
+        border: 2px solid rgba(0, 0, 0, 0);
+        border-radius: 5px;
+        color:black;
+}
+
+
+  {%endblock subcss%}
+</style>
+
+
+
+
+
+{%block content%}
+<form action="editdata_submit/{{auth.id}}" method="post">
+    {%csrf_token %}
+<div class="div_detcontainer">
+    <h3>Authentication Details</h3>
+    <div class="div_sdet">
+        <label for="auth_username"><b>User Name</b></label>
+        <input type="text" placeholder="Enter the name" name="auth_username" value="{{auth.username}}" required>
+    </div>
+    <div class="div_sdet">
+        <label for="auth_email"><b>User email</b></label>
+        <input type="text" placeholder="someone@gmail.com" name="auth_email" value="{{auth.email}}"  required>
+    </div>
+
+    <hr>
+    <h3>Student Details</h3>
+    <div class="div_sdet">
+        <label for="stu_usn"><b>USN</b></label>
+        <div id="usn">{{student.usn}}</div>
+    </div>
+    <div class="div_sdet">
+        <label for="stu_name"><b>NAME</b></label>
+        <input type="text" placeholder="Enter NAME" name="stu_name" value="{{student.name}}" required>
+    </div>
+    <div class="div_sdet">
+        <label for="stu_age"><b>AGE</b></label>
+        <input type="text" placeholder="Enter age" name="stu_age" value="{{student.age}}" required>
+    </div>
+    <div class="div_sdet">
+        <label for="stu_dob"><b>DOB</b></label>
+        <input type="text" placeholder="Enter dob (YYYY-MM-DD)" name="stu_dob" value="{{student.dob|date:"Y-m-d"}}" required>
+    </div>
+    <div class="div_sdet">
+        <label for="stu_branch"><b>BRANCH</b></label>
+        <input type="text" placeholder="Enter branch" name="stu_branch" value="{{student.branch}}" required>
+    </div>
+    <div class="div_sdet">
+        <label for="stu_sem"><b>SEMESTER</b></label>
+        <input type="text" placeholder="Enter sem" name="stu_sem" value="{{student.sem}}" required>
+    </div>
+
+    <div id="submit_btn">
+        <button class="submit" type="submit">SUBMIT</button>
+    </div>             
+    
+  </div>
+</form>
+<hr>
+<table class="tables">
+    <caption>ATTENDENCE</caption>
+	<tr>
+	    <th class="th" style="width: 25%;">SUBCODE</th>
+	    <th class="th" style="width: 35%;">SUBNAME</th>
+		<th class="th" style="width: 20%;">FACULTY NAME</th>
+	    <th class="th" style="width: 8%;">ATTENDENCE (%)</th>
+        <th class="th" style="width: 8%;">IA1</th>
+        <th class="th" style="width: 8%;">IA2</th>
+        <th class="th" style="width: 8%;">IA3</th>
+        <th class="th" style="width: 8%;">ASSIGNMENT</th>
+        <th class="th" style="width: 8%;">FINAL IA</th>
+		<th class="th" style="width: 8%;">DELETE</th>
+    </tr>
+    {%for i in att%}
+    <tr>
+        <td class="td">{{i.subcode}}</td>
+        <td class="td">{{i.subname}}</td>
+        <td class="td">{{i.facultyname}}</td>
+        <td class="td">{{i.attpercent}}</td>
+        <td class="td">{{i.ia1}}</td>
+        <td class="td">{{i.ia2}}</td>
+        <td class="td">{{i.ia3}}</td>
+        <td class="td">{{i.assignment}}</td>
+        <td class="td">{{i.finalia}}</td>
+        <td class="td"><a href="deleteattendencedata/{{i.aid}}">
+            <button class="btn_edit_del"><img src="/static/delete.png" height="25px" alt=""></button>
+        </a></td>
+    </tr>
+    {%endfor%}
+
+</table>
+<hr>
+<table class="tables">
+    <caption>MARKS</caption>
+	<tr>
+        <th class="th" style="width: 8%;">SEMESTER</th>
+	    <th class="th" style="width: 25%;">TOTAL MARKS</th>
+	    <th class="th" style="width: 35%;">OBTAINED MARKS</th>
+		<th class="th" style="width: 20%;">SGPA</th>
+	    <th class="th" style="width: 8%;">BACKLOG</th>
+        <th class="th" style="width: 8%;">DELETE</th>
+		
+    </tr>
+    {%for i in marks%}
+    <tr>
+        <td class="td">{{i.sem}}</td>
+        <td class="td">{{i.totalmarks}}</td>
+        <td class="td">{{i.obtmarks}}</td>
+        <td class="td">{{i.sgpa}}</td>
+        <td class="td">{{i.backlogs}}</td>
+        <td class="td"><a href="deletemarksdata/{{i.mid}}">
+            <button class="btn_edit_del"><img src="/static/delete.png" height="25px" alt=""></button>
+        </a></td>
+    </tr>
+    {%endfor%}
+
+</table>
+      
+      
+{%endblock content%}

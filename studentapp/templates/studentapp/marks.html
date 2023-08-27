@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+
+
+<style>
+	{%block subcss%}
+table{
+	font-family: 'Carter One', cursive;
+	margin-top: 30px;
+}
+.th{
+	background-color: #12214a;
+	color: white;
+	padding: 10px;
+	/* width: 100%; */
+}
+.td{
+	padding: 5px;
+	background-color: rgba(220, 220, 220, 0.622);
+	justify-content: center;
+}
+caption{
+	background-color: #12214a;
+	color: white;
+	padding: 10px;
+}
+
+    {%endblock subcss%}
+</style>
+
+
+{%block content%}
+
+	<!-- Let's start with the navbar -->
+	<nav><hr>
+		<div class="brand">{{student.name}}</div><br>
+		<div class="brand">{{student.usn}}</div><br>
+		<div class="links">
+			<hr>
+			<a data-active="index" href="/studentapp/{{stid}}">Home</a>
+			<a data-active="products" href="/studentapp/info/{{stid}}">Info</a>
+			<a data-active="farm" href="/studentapp/marks/{{stid}}" style="background: #007bff;color: #fff;">Marks</a>
+			<a data-active="about" href="/studentapp/attendence/{{stid}}">Attendace</a>
+			<a data-active="contact" href="/studentapp/faculty/{{stid}}">Faculty</a>
+			<hr>
+		</div>
+	</nav>
+
+	<!-- I will also add a header to the pages -->
+		<table>
+			<caption>MARKS</caption>
+			<tr>
+				<th class="th" style="width: 7%;">SEM</th>
+				<th class="th" style="width: 7%;">TOTAL MARKS</th>
+				<th class="th" style="width: 7%;">OBTAINED MARKS</th>
+				<th class="th" style="width: 7%;">SGPA</th>
+				<th class="th" style="width: 7%;">BACKLOG</th>
+			</tr>
+			{%for i in marks%}
+			<tr>
+				<td class="td">{{i.sem}}</td>
+				<td class="td">{{i.totalmarks}}</td>
+				<td class="td">{{i.obtmarks}}</td>
+				<td class="td">{{i.sgpa}}</td>
+				<td class="td">{{i.backlogs}}</td>
+			</tr>
+			{%endfor%}
+		</table>
+
+
+
+	{%endblock content%}

@@ -1,0 +1,193 @@
+{% extends "main.html" %}
+
+{%block font%}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
+{%endblock font%}
+
+
+<style>
+{%block css%}
+body{
+    background-image: url('/static/moon1.jp');
+	background-size: cover;
+}
+table{
+	font-family: 'Carter One', cursive;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.th{
+	background-color: #12214a;
+	color: white;
+	padding: 10px;
+	/* width: 100%; */
+}
+.td{
+	padding: 5px;
+	background-color: rgba(220, 220, 220, 0.622);
+	justify-content: center;
+}
+caption{
+	background-color: #12214a;
+	color: aqua;
+	font-weight: bold;
+	padding: 10px;
+}
+
+
+
+.btn_edit_del {
+    all: unset;
+    cursor: pointer;
+}
+
+.btn_edit_del:focus {
+    outline: orange 5px auto;
+}
+.btn_addst{
+	margin-left: 5px;
+	background-color: blue;
+	color: white;
+	border: 2px solid blue;
+	border-radius: 5px;
+	padding: 10px;
+	cursor: pointer;
+}
+#btn_addst:hover{
+	background-color:rgb(4, 4, 224);
+}
+#div_btn{
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: right;
+}
+
+.semBtnConatainer{
+	display: flex;
+	align-items: center;
+	justify-content:space-around;
+	flex-wrap: wrap;
+}
+
+.btn_sem{
+	margin: 51px;
+width: 196px;
+height: 130px;
+background-color: #12214a;
+color: white;
+border: 2px solid #12214a;
+border-radius: 5px;
+cursor: pointer;
+}
+.btn_sem:hover{
+	background-color: #12214aad;;
+}
+a{
+	cursor: pointer;
+	all: unset;
+}
+
+{%endblock css%}
+</style>
+
+{%block content%}
+<div id="div_btn">
+	<a href="addstaff"><button id="staffadd" class="btn_addst">ADD STAFF</button></a>
+	<a href="addstudentinfo"><button class="btn_addst">ADD STUDENTS</button></a>
+	<a href="addmarks"><button class="btn_addst">ADD MARKS</button></a>
+	<a href="addattendence"><button class="btn_addst">ADD ATTENDENCE</button></a>
+	
+</div>
+<table>
+	<caption>STAFF</caption>
+	<tr>
+	    <th class="th" style="width: 35%;">USER NAME</th>
+	    <th class="th" style="width: 50%;">EMAIL</th>
+		{% comment %} <th class="th" style="width: 50%;">DATE JOINED</th> {% endcomment %}
+		<!-- <th class="th" style="width: 8%;">SUPER USER</th> -->
+	    <!-- <th class="th" style="width: 8%;">EDIT</th>
+		<th class="th" style="width: 8%;">DELETE</th> -->
+    </tr>
+	{%for x in auth%}
+	<tr>
+		<td class="td">{{x.username}}</td>
+		<td class="td">{{x.email}}</td>
+		{% comment %} <td class="td">{{x.date_joined}}</td> {% endcomment %}
+		<!-- {%if x.is_superuser%}
+		<td class="td">Yes</td>
+		{%else%}
+		<td class="td">No</td>
+		{%endif%} -->
+
+
+		<!-- {%if x.is_superuser%}
+		<td class="td"></td>
+		{%else%}
+		<td class="td">
+			<a href="editdata/{{x.id}}">
+				<button class="btn_edit_del"><img src="/static/edit.png" height="25px" alt=""></button>
+			</a>
+		</td>
+		{%endif%}
+
+		{%if x.is_superuser%}
+		<td class="td"></td>
+		{%else%}
+		<td class="td">
+			<a href="deletedata/{{x.id}}">
+				<button class="btn_edit_del"><img src="/static/delete.png" height="25px" alt=""></button>
+			</a>
+		</td>
+		{%endif%} -->
+	</tr>
+	{%endfor%}
+</table>
+<hr>
+
+<div class="semBtnConatainer">
+	<a href="semester/{{1}}">
+		<button  class="btn_sem">
+			SEM1
+		</button>
+	</a>
+	<a href="semester/{{2}}">
+		<button  class="btn_sem">
+			SEM2
+		</button>
+	</a>
+	<a href="semester/{{3}}">
+		<button  class="btn_sem">
+			SEM3
+		</button>
+	</a>
+	<a href="semester/{{4}}">
+		<button  class="btn_sem">
+			SEM4
+		</button>
+	</a>
+	<a href="semester/{{5}}">
+		<button  class="btn_sem">
+			SEM5
+		</button>
+	</a>
+	<a href="semester/{{6}}">
+		<button  class="btn_sem">
+			SEM6
+		</button>
+	</a>
+	<a href="semester/{{7}}">
+		<button  class="btn_sem">
+			SEM7
+		</button>
+	</a>
+	<a href="semester/{{8}}">
+		<button  class="btn_sem">
+			SEM8
+		</button>
+	</a>
+</div>
+
+
+{%endblock content%}

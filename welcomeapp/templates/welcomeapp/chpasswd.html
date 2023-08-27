@@ -1,0 +1,216 @@
+{% extends "main.html" %}
+
+
+
+
+
+{%block font%}
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Secular+One&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Secular+One&display=swap" rel="stylesheet"> 
+
+{%endblock font%}
+
+
+<style>
+{% block css %}
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Secular+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Secular+One&display=swap');
+
+    body{
+        background-color: rgb(255, 255, 255);
+        background-image: url("https://daijiworld.ap-south-1.linodeobjects.com/Linode/images3/rayan_010822_SMVITM5.jpg");
+        background-size: cover;
+    }
+    #header{
+        background-color: #12214a;
+        /* background-image: url("./static/blue.png");
+        background-size: cover; */
+        margin: -10px;
+    }
+    .cls_head{
+        font-family: 'Carter One', cursive;
+        /* font-family: 'Secular One', sans-serif; */
+        margin-top:-5px ;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #id_h1{
+        background-color: #12214a;
+        text-align: center;
+        padding: 10px;
+        margin-top: 10px;
+        text-align:center;
+        color: #feffff;
+        text-shadow: 2px 0px 0px blue;
+        /* text-shadow: 1px 0px 0px aqua, 0 0 25px rgb(251, 255, 0), 0 0 5px rgb(9, 255, 0); */
+    }
+    #id_signin{
+        display: flex;
+        justify-content: right;
+        margin-bottom: -5px;
+    }
+
+    .div_container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;
+        margin-top: 10px;
+    }
+    #div_card{
+        /* background-image: url("https://media.istockphoto.com/id/1207979808/photo/transparent-glass-with-fog-up-and-water-drop-on-it-during-winter-season-close-up-shot-of.jpg?b=1&s=170667a&w=0&k=20&c=WOrTpbQovpOks6wzKYyrqXGvUhPGnLy0elx2R0qAGMc=");
+        background-size: cover; */
+        /* font-family: 'Secular One', sans-serif; */
+
+        background-image: url("https://sode-edu.in/wp-content/themes/sode-20/images/smvitm-college-logo.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+        font-family: 'Carter One', cursive;
+        font-size: 25px;
+        height:1050px;
+        flex: 47%;
+        margin:50px 25%;
+        background-color:aliceblue;
+        color: rgb(0, 0, 0);
+        animation-name: blow;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        border-radius: 25px;
+        /* box-shadow: 0px 0px 20px aqua; */
+
+        
+    }
+    #id_h3s{
+        text-align: center;
+        padding: 10px;
+    }
+    #id_h3f{
+        text-align: center;
+        padding: 10px;
+    }
+
+    button {
+        font-family: 'Carter One', cursive;
+        font-size: 18px;
+/* font-family: 'Secular One', sans-serif; */
+        background-color:blue;
+        border:solid 1px black;
+        color: white;
+        padding: 14px 20px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    button:hover{
+        background-color:rgb(4, 4, 224);
+        
+    }
+    input[type=text], input[type=password] {
+        /* font-family: 'Secular One', sans-serif; */
+        font-family: 'Carter One', cursive;
+        font-size: 20px;
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        /* border: 1px solid aqua; */
+        box-sizing: border-box;
+        background-color: rgba(128, 128, 128, 0.312);
+        border: 2px solid rgba(0, 0, 0, 0);
+        border-radius: 5px;
+        color:black;
+    }
+    .div_detcontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        margin-top: 40px;
+    }
+    .div_sdet{
+        padding: 10px;
+        margin: 20px;
+        justify-content: center;
+    }
+    .submit{
+        margin: 50px;
+    }
+    #hr{
+        margin-left: -10px;
+        margin-right: -10px;
+        color: aqua;
+    }
+    #message{
+        color: red;
+    }
+    .msg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+{% endblock css%}
+</style>
+
+{%block content%}
+<div id="header">
+    <div class="cls_head">
+    <h1  id="id_h1">STUDENT INFORMATION</h1>
+    </div>
+    </div>
+    <hr id="hr">
+
+    
+<div class="div_container">
+    <div id="div_card">
+        <h3 id="id_h3s"> CHANGE PASSWORD</h3>
+        <form action="chpasswdsubmit" method="post">
+            {%csrf_token %}
+        <div class="div_detcontainer">
+            <div class="div_sdet">
+                <label for="stuname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="stuname" required>
+            </div>
+            <div class="div_sdet">
+                <label for="stumail"><b>User email</b></label>
+                <input type="text" placeholder="someone@gmail.com" name="stumail" required>
+            </div>
+        
+            <div class="div_sdet">
+                <label for="oldpswd"><b>Old Password</b></label>
+                <input type="password" placeholder="Enter Password" name="oldpswd" required>
+            </div>
+            <div class="div_sdet">
+                <label for="newpswd"><b>New Password</b></label>
+                <input type="password" placeholder="Enter Password" name="newpswd" required>
+            </div>
+                            
+            <button class="submit" type="submit">Enter</button>
+          </div>
+          <div class="msg">
+            {%for i in messages%}
+            <p id="message">{{i}}</p>
+            {%endfor%}
+          </div>
+        </form>
+    </div>
+</div>
+{%endblock content%}
+
+
+<script>
+{%block script%}
+
+    function myFunction() {
+      alert("Hello! I am an alert box!");
+    }
+    
+{%endblock script%}
+</script>

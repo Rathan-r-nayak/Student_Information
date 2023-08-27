@@ -1,0 +1,242 @@
+{% extends "main.html" %}
+
+{%block title%}{%endblock title%}
+
+
+
+{%block font%}
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Secular+One&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Secular+One&display=swap" rel="stylesheet"> 
+
+{%endblock font%}
+
+<style>
+{% block css %}
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Secular+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Secular+One&display=swap');
+
+    body{
+        background-color: rgb(255, 255, 255);
+        background-image: url("https://sode-edu.in/wp-content/uploads/2022/05/2f-certificate.jpg");
+
+        /* background: #03192f url('https://sode-edu.in/wp-content/themes/sode-20/images/college-logo-bg-2.png') no-repeat center; */
+
+        background-size: cover;
+        
+    }
+    #header{
+        background-color: #12214a;
+        /* background-image: url("static/blue.png");
+        background-size: cover; */
+        margin: -10px;
+    }
+    .cls_head{
+        font-family: 'Carter One', cursive;
+        /* font-family: 'Secular One', sans-serif; */
+        margin-top:-5px ;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #id_h1{
+        background-color: #12214a;
+        text-align: center;
+        padding: 10px;
+        margin-top: 0px;
+        text-align:center;
+        color: #feffff;
+        text-shadow: 2px 0px 0px blue;
+    }
+    #btn_chpasswd{
+	background-color: blue;
+	color: white;
+	border: 2px solid blue;
+	border-radius: 5px;
+	padding: 10px;
+	cursor: pointer;
+}
+#btn_chpasswd:hover{
+	background-color:rgb(4, 4, 224);
+}
+#div_btn{
+    font-family: 'Carter One', cursive;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: right;
+}
+
+    .div_container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;
+        margin-top: 10px;
+    }
+    #div_card{
+        
+        /* background-image: url("https://media.istockphoto.com/id/1207979808/photo/transparent-glass-with-fog-up-and-water-drop-on-it-during-winter-season-close-up-shot-of.jpg?b=1&s=170667a&w=0&k=20&c=WOrTpbQovpOks6wzKYyrqXGvUhPGnLy0elx2R0qAGMc=");
+        background-size: cover; */
+
+        background-image: url("./static/smvitm.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        font-family: 'Carter One', cursive;
+        font-size: 20px;
+        height:850px;
+        flex: 47%;
+        margin:50px 25%;
+        background-color:aliceblue;
+        color: black;
+        animation-name: blow;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        border-radius: 25px;
+        /* box-shadow: 0px 0px 20px aqua; */
+
+        
+    }
+    /* @keyframes blow {
+        from{box-shadow: 0px 0px 0px aqua;}
+        to{box-shadow: 0px 0px 20px aqua;}
+    } */
+
+    #id_h3s{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #id_h3f{
+        text-align: center;
+        padding: 10px;
+    }
+
+    .submit{
+        font-family: 'Carter One', cursive;
+        font-size: 18px;
+/* font-family: 'Secular One', sans-serif; */
+        background-color:blue;
+        border:solid 1px blue;
+        color: white;
+        padding: 14px 20px;
+        margin: 50px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    .submit:hover{
+        background-color:rgb(4, 4, 224);
+    }
+    input[type=text], input[type=password] {
+        font-family: 'Carter One', cursive;
+        font-size: 20px;
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        /* border: 1px solid aqua; */
+        box-sizing: border-box;
+        background-color: rgba(128, 128, 128, 0.312);
+        border: 2px solid rgba(0, 0, 0, 0);
+        border-radius: 5px;
+        color:black;
+    }
+    .div_detcontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        margin-bottom: 40px;
+    }
+    .div_sdet{
+        padding: 10px;
+        margin: 20px;
+        justify-content: center;
+    }
+    #hr{
+        margin-left: -10px;
+        margin-right: -10px;
+        color: aqua;
+    }
+    #message{
+        color: red;
+    }
+    .msg{
+        display: flex;
+align-items: center;
+justify-content: center;
+margin-top: -32px;
+    }
+{% endblock css%}
+</style>
+
+
+
+{%block content%}
+<div id="header">
+<div id="div_btn">
+	<a href="chpasswd"><button id="btn_chpasswd">CHANGE PASSWORD</button></a>
+</div>
+
+<br>
+<div class="cls_head">
+<h1  id="id_h1">STUDENT INFORMATION</h1>
+</div>
+</div>
+<hr id="hr">
+
+<div class="div_container">
+    <div id="div_card">
+        <h3 id="id_h3s"><img src="static/login1.png" height="65px" alt="LOGIN"></h3>
+        <form action="enterlogin" method="post">
+            {%csrf_token %}
+        <div class="div_detcontainer">
+            <div class="div_sdet">
+                <label for="stuname"><b>User Name</b></label>
+                <input type="text" placeholder="Enter the name" name="stuname" required>
+            </div>
+            <div class="div_sdet">
+                <label for="stumail"><b>User email</b></label>
+                <input type="text" placeholder="someone@gmail.com" name="stumail" required>
+            </div>
+        
+            <div class="div_sdet">
+                <label for="stupsw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="stupsw" required>
+            </div>
+                            
+            <button class="submit" type="submit">Login</button>
+          </div>
+          <div class="msg">
+            {%for i in messages%}
+            <p id="message">{{i}}</p>
+            {%endfor%}
+          </div>
+        </form>
+    </div>
+
+    <!-- <div id="div_card">
+        <h3 id="id_h3f">FACULTY LOGIN</h3>
+        <form action="" method="post">
+            {%csrf_token %}
+        <div class="div_detcontainer">
+            <div class="div_sdet">
+                <label for="stuname"><b>User email</b></label>
+                <input type="text" placeholder="someone@gmail.com" name="facmail" required>
+            </div>
+        
+            <div class="div_sdet">
+                <label for="stupsw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="facpsw" required>
+            </div>
+        </form>                
+            <button class="submit" type="submit">Login</button>
+          </div>
+    </div> -->
+</div>
+{%endblock content%}

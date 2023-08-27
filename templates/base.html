@@ -1,0 +1,91 @@
+{% extends "main.html" %}
+
+
+{%block font%}
+{%endblock font%}
+<style>
+    {% block css %}
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: #555;
+        font-family: sans-serif;
+    }
+
+    nav{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        grid-column-gap: 30px;
+        margin-top: 30px;
+        
+    }
+    
+    nav .brand{
+        padding: 11px 25px;
+        font-size: 28px;
+        font-weight: 900;
+        color: #245990;
+        text-transform: uppercase;
+        height: 80px;
+    }
+    
+    nav a{
+        text-decoration: none;
+        display: inline-block;
+        padding: 15px 35px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    
+    nav a:hover,
+    nav a.active{
+        background: #245990;
+        color: #fff;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    }
+    
+    header{
+        padding: 100px 20px;
+        background: #f5f5f5;
+        margin-top: 30px;
+    }
+    
+    header h1{
+        font-size: 50px;
+    }
+    
+    header h2{
+        margin-top: 50px;
+        font-size: 40px;
+        color: #245990;
+    }
+    
+    header p{
+        margin-top: 20px;
+        line-height: 26px;
+        font-size: 18px;
+    }
+    {% endblock css %}
+    {%block subcss%}
+    {%endblock subcss%}
+
+</style>
+
+
+{%block content%}
+{%endblock content%}
+
+
+{%block js%}
+<script>
+let links = document.querySelectorAll(".links a");
+let bodyId = document.querySelector("body").id;
+
+for(let link of links){
+    if(link.dataset.active == bodyId){
+        link.classList.add("active");
+    }
+}
+</script>
+{%endblock js%}

@@ -1,0 +1,124 @@
+{% extends "main.html" %}
+
+{%block font%}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
+{%endblock font%}
+
+
+<style>
+{%block css%}
+body{
+    background-image: url('/static/moon1.jp');
+	background-size: cover;
+}
+table{
+	font-family: 'Carter One', cursive;
+}
+.th{
+	background-color: #12214a;
+	color: white;
+	padding: 10px;
+	/* width: 100%; */
+}
+.td{
+	padding: 5px;
+	background-color: rgba(220, 220, 220, 0.622);
+	justify-content: center;
+}
+caption{
+	background-color: #12214a;
+	color: aqua;
+	font-weight: bold;
+	padding: 10px;
+}
+
+
+
+.btn_edit_del {
+    all: unset;
+    cursor: pointer;
+}
+
+.btn_edit_del:focus {
+    outline: orange 5px auto;
+}
+.btn_addst{
+	margin-left: 5px;
+	background-color: blue;
+	color: white;
+	border: 2px solid blue;
+	border-radius: 5px;
+	padding: 10px;
+	cursor: pointer;
+}
+#btn_addst:hover{
+	background-color:rgb(4, 4, 224);
+}
+#div_btn{
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: right;
+}
+
+.semBtnConatainer{
+	display: flex;
+	align-items: center;
+	justify-content:space-around;
+	flex-wrap: wrap;
+}
+
+.btn_sem{
+	margin: 30px;
+width: 196px;
+height: 130px;
+background-color: #12214a;
+color: white;
+border: 2px solid #12214a;
+border-radius: 5px;
+cursor: pointer;
+}
+a{
+	cursor: pointer;
+	all: unset;
+}
+
+{%endblock css%}
+</style>
+
+
+{%block content%}
+
+<table>
+	<caption>USERS</caption>
+	<tr>
+	    <th class="th" style="width: 25%;">USN</th>
+	    <th class="th" style="width: 35%;">NAME</th>
+	    <th class="th" style="width: 10%;">AGE</th>
+		<th class="th" style="width: 20%;">DOB</th>
+		<th class="th" style="width: 50%;">BRANCH</th>
+	    <th class="th" style="width: 8%;">EDIT</th>
+		<th class="th" style="width: 8%;">DELETE</th>
+    </tr>
+	{%for x in student%}
+	<tr>
+		<td class="td">{{x.usn}}</td>
+		<td class="td">{{x.name}}</td>
+		<td class="td">{{x.age}}</td>
+		<td class="td">{{x.dob}}</td>
+		<td class="td">{{x.branch}}</td>
+		<td class="td">
+			<a href="editdata/{{x.usn}}">
+				<button class="btn_edit_del"><img src="/static/edit.png" height="25px" alt=""></button>
+			</a>
+		</td>
+		<td class="td">
+			<a href="deletedata/{{x.usn}}">
+				<button class="btn_edit_del"><img src="/static/delete.png" height="25px" alt=""></button>
+			</a>
+		</td>
+	</tr>
+	{%endfor%}
+</table>
+{%endblock content%}

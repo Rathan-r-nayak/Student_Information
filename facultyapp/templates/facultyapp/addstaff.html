@@ -1,0 +1,110 @@
+{% extends "main.html" %}
+
+{%block font%}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
+{%endblock font%}
+
+
+<style>
+    {%block subcss %}
+    
+      .div_sdet{
+            padding: 10px;
+            margin: 20px;
+            justify-content: center;
+        }
+        h3{
+            font-family: 'Frijole', cursive;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            color: rgb(22, 22, 139);
+            
+        }
+    label{
+        font-family:"Courier New", monospace;
+        padding: 10px;
+        font-size: 25px;
+        /* border: 0.5px solid black; */
+        border-radius: 5px;
+        width: 300px;
+        margin: 5px 25px 5px 15px;
+        color: rgb(119, 117, 117)
+    
+        
+    
+      }
+      input[type=text], input[type=password] {
+            font-family: 'Carter One', cursive;
+            font-size: 20px;
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            /* border: 1px solid aqua; */
+            box-sizing: border-box;
+            background-color: rgba(128, 128, 128, 0.312);
+            border: 2px solid rgba(0, 0, 0, 0);
+            border-radius: 5px;
+            color:black;
+        }
+    
+        button {
+            font-family: 'Carter One', cursive;
+            font-size: 18px;
+    /* font-family: 'Secular One', sans-serif; */
+            background-color:blue;
+            border:solid 1px blue;
+            color: white;
+            padding: 14px 20px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        button:hover{
+            background-color:rgb(4, 4, 224);
+        }
+        #submit_btn{
+            display: flex;
+            justify-content: center;
+        }
+        #hr{
+            margin-left: -10px;
+            margin-right: -10px;
+            color: aqua;
+        }
+      {%endblock subcss%}
+</style>
+
+
+
+{%block content%}
+<form action="addstaffSubmit" method="post">
+    {%csrf_token %}
+<div class="div_detcontainer">
+    <h3>Staff Authentication Details</h3>
+    <div class="div_sdet">
+        <label for="auth_username"><b>User Name</b></label>
+        <input type="text" placeholder="Enter the name" name="auth_username" required>
+    </div>
+    <div class="div_sdet">
+        <label for="auth_email"><b>User email</b></label>
+        <input type="text" placeholder="someone@gmail.com" name="auth_email" required>
+    </div>
+
+    <div class="div_sdet">
+        <label for="auth_passwd"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="auth_passwd"  required>
+    </div>
+
+
+    <div id="submit_btn">
+        <button class="submit" type="submit">SUBMIT</button>
+    </div>             
+    
+  </div>
+</form>
+      
+      
+{%endblock content%}

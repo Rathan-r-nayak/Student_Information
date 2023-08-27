@@ -1,0 +1,337 @@
+{% extends "base.html" %}
+
+<style>
+{%block subcss%}
+/* class name of the container */
+.col-md-4{
+    background-color: rgb(208, 216, 216);
+    margin-top: 30px;
+    margin-left: 20px;
+    height: 500px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+/* class name inside the  container */
+.row{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+/* a which refers to view more */
+.black{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    border-radius: 10px;
+    
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+h6{
+    margin-left: 100px;
+    font-size: large;
+    
+}
+/* #class name of photo */
+.se_f_photo{
+    justify-content: center;
+    height:250px;
+    width: 200px;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+
+.col-md-6{
+    display: flex;
+    justify-content: center;
+    margin-bottom:30px ;
+}
+{%endblock subcss%}
+</style>
+
+
+
+
+{%block content%}
+
+	<!-- Let's start with the navbar -->
+	<nav><hr>
+		<div class="brand">Shri Madhwa Vadiraja Institute of Technology and Management</div><br>
+		<div class="brand"></div><br>
+		<div class="links">
+			<hr>
+			<a data-active="index" href="/studentapp/{{stid}}">Home</a>
+			<a data-active="products" href="/studentapp/info/{{stid}}">Info</a>
+			<a data-active="farm" href="/studentapp/marks/{{stid}}">Marks</a>
+			<a data-active="about" href="/studentapp/attendence/{{stid}}">Attendace</a>
+			<a data-active="contact" href="/studentapp/faculty/{{stid}}" style="background: #007bff;color: #fff;">Faculty</a>
+			<hr>
+	</nav>
+
+	<!-- I will also add a header to the pages -->
+	<header>
+		<!-- {% comment %} <a href="https://sode-edu.in/sode-faculty/?dept_id=177">civil teaching</a> {% endcomment %} -->
+
+    <div class="col-md-9 col-lg-9 site_page_entry_content row-eq-height">
+        <div class="full site_content">
+                    
+            
+        
+
+        <div class="full">
+            <!-- <div class="row"> -->
+                <div class="col-md-6 col-lg-6"><h2>Computer Science &amp; Engineering</h2></div>
+                <div class="col-md-6 col-lg-6 text-right"><a class="btn1 place_btn" href="https://sode-edu.in/sode-faculty/" style="color: mediumblue;">Back to Departments</a></div>
+            <!-- </div> -->
+
+            <div class="row ">
+                        <div class="col-md-4 col-lg-4 ">
+       
+        <div class="im">
+            <img src="https://sode-edu.in/wp-content/uploads/2019/09/GANESH-AITHAL-EC.jpg" class="se_f_photo"><h6>Dr. GANESH AITHAL</h6>				
+            <p>Professor and Vice Principal</p>
+        </div>
+         <a class="black" target="_blank" href="https://sode-edu.in/faculties/ganesh-aithal/" rel="bookmark" title="Dr. GANESH AITHAL">View More</a>
+
+
+    </div>
+        <div class="col-md-4 col-lg-4 ">
+        
+        <div class="im">
+            <img src="https://sode-edu.in/wp-content/uploads/2021/01/Soumya_J_Bhat_CSE-1.jpg" class="se_f_photo">
+            <h6>Dr. SOUMYA J. BHAT</h6>				
+            <p>Associate Professor &amp; Head of the Department</p>
+        </div>
+        <a class="black" target="_blank" href="https://sode-edu.in/faculties/soumya-j-bhat/" rel="bookmark" title="Dr. SOUMYA J. BHAT">View More</a>
+        
+    </div>
+        <div class="col-md-4 col-lg-4 ">
+        
+        <div class="im">
+            <img src="https://sode-edu.in/wp-content/uploads/2015/01/NAGARAJ-BHAT-CS.jpg" class="se_f_photo"><h6>Dr. NAGARAJ BHAT</h6>				
+            <p>Associate Professor </p>
+        </div>
+
+        <a class="black" target="_blank" href="https://sode-edu.in/faculties/nagaraj-bhat/" rel="bookmark" title="Dr. NAGARAJ BHAT">View More</a>
+
+
+
+    </div>
+        <div class="col-md-4 col-lg-4 ">
+        
+        <div class="im">
+            <img src="https://sode-edu.in/wp-content/uploads/2015/01/SHRINIVASA-CS.jpg" class="se_f_photo"><h6>Mr. SHRINIVASA</h6>				
+            <p>Assistant Professor (Senior)</p>
+        </div>
+        
+        <a class="black" target="_blank" href="https://sode-edu.in/faculties/shrinivasa/" rel="bookmark" title="Mr. SHRINIVASA">View More</a>
+        
+
+
+    </div>
+        <div class="col-md-4 col-lg-4 ">
+        
+        <div class="im">
+            <img src="https://sode-edu.in/wp-content/uploads/2015/01/YASHASWINI-JOGI-CS.jpg" class="se_f_photo"><h6>Ms. YASHASWINI JOGI</h6>				
+            <p>Assistant Professor (Senior)</p>
+        </div>
+        
+        <a class="black" target="_blank" href="https://sode-edu.in/faculties/yashaswini-jogi/" rel="bookmark" title="Ms. YASHASWINI JOGI">View More</a>
+        
+
+
+    </div>
+        <div class="col-md-4 col-lg-4 ">
+        
+        <div class="im">
+            <img src="https://sode-edu.in/wp-content/uploads/2015/01/SAHANA-KARANTH-CS.jpg" class="se_f_photo"><h6>Ms. SAHANA</h6>				
+            <p>Assistant Professor (Senior)</p>
+        </div>
+        
+        <a class="black" target="_blank" href="https://sode-edu.in/faculties/sahana/" rel="bookmark" title="Ms. SAHANA">View More</a>
+        
+
+    </div>
+        <div class="col-md-4 col-lg-4 ">
+        
+        <div class="im">
+            <img src="https://sode-edu.in/wp-content/uploads/2015/01/DEEPAK-RAO-CS-1.jpg" class="se_f_photo"><h6>Mr. DEEPAK RAO M</h6>				
+            <p>Assistant Professor (Senior)</p>
+        </div><a class="black" target="_blank" href="https://sode-edu.in/faculties/deepak-rao-m/" rel="bookmark" title="Mr. DEEPAK RAO M">View More</a>
+        
+    </div>
+        <div class="col-md-4 col-lg-4 ">
+        
+        <div class="im">
+            <img src="https://sode-edu.in/wp-content/uploads/2015/01/PRAVEEN-NAIK-CS.jpg" class="se_f_photo"><h6>Mr. PRAVEEN M NAIK</h6>				
+            <p>Assistant Professor (Senior)</p>
+        </div><a class="black" target="_blank" href="https://sode-edu.in/faculties/praveen-m-naik/" rel="bookmark" title="Mr. PRAVEEN M NAIK">View More</a>
+        
+    </div>
+        <div class="col-md-4 col-lg-4 ">
+        
+        <div class="im">
+            <img src="https://sode-edu.in/wp-content/uploads/2015/01/SHARATH-KUMAR-CS.jpg" class="se_f_photo"><h6>Mr. SHARATH KUMAR</h6>				
+            <p>Assistant Professor (Senior)</p>
+        </div><a class="black" target="_blank" href="https://sode-edu.in/faculties/sharath-kumar/" rel="bookmark" title="Mr. SHARATH KUMAR">View More</a>
+        
+    </div>
+        <div class="col-md-4 col-lg-4 ">
+        
+        <div class="im">
+            <img src="https://sode-edu.in/wp-content/uploads/2017/08/Rukmini.jpg" class="se_f_photo"><h6>Ms. RUKMINI BHAT B</h6>				
+            <p>Assistant Professor (Senior)</p>
+        </div><a class="black" target="_blank" href="https://sode-edu.in/faculties/rukmini-ballal/" rel="bookmark" title="Ms. RUKMINI BHAT B">View More</a>
+        
+    </div>
+        <div class="col-md-4 col-lg-4 ">
+        
+        <div class="im">
+            <img src="https://sode-edu.in/wp-content/uploads/2017/07/Sowmya.jpg" class="se_f_photo"><h6>Ms. SOWMYA S</h6>				
+            <p>Assistant Professor (Senior)</p>
+        </div><a class="black" target="_blank" href="https://sode-edu.in/faculties/sowmya-s/" rel="bookmark" title="Ms. SOWMYA S">View More</a>
+        
+    </div>
+        <div class="col-md-4 col-lg-4 ">
+        
+        <div class="im">
+            <img src="https://sode-edu.in/wp-content/uploads/2020/11/savitha-2.jpg" class="se_f_photo"><h6>Ms. SAVITHA A SHENOY</h6>			
+            <p>Assistant Professor (Senior)</p>
+        </div><a class="black" target="_blank" href="https://sode-edu.in/faculties/savitha-a-shenoy/" rel="bookmark" title="Ms. SAVITHA A SHENOY">View More</a>
+        
+    </div>
+        <div class="col-md-4 col-lg-4 ">
+        
+        <div class="im">
+            <img height="150px" src="https://sode-edu.in/wp-content/uploads/2015/01/Tejaswini-H.jpg" class="se_f_photo"><h6>Ms. TEJASWINI H</h6>				
+            <p>Assistant Professor </p>
+        </div><a class="black" target="_blank" href="https://sode-edu.in/faculties/tejaswini-h/" rel="bookmark" title="Ms. TEJASWINI H">View More</a>
+        
+    </div>
+        <div class="col-md-4 col-lg-4 ">
+        
+        <div class="im">
+            <img src="https://sode-edu.in/wp-content/uploads/2015/01/RAMYA-D-SHETTY-CS.jpg" class="se_f_photo"><h6>Ms. RAMYA D SHETTY</h6>				
+            <p>Assistant Professor </p>
+        </div><a class="black" target="_blank" href="https://sode-edu.in/faculties/ramya-d-shetty/" rel="bookmark" title="Ms. RAMYA D SHETTY">View More</a>
+        
+    </div>
+        <div class="col-md-4 col-lg-4 ">
+        
+        <div class="im">
+            <img src="https://sode-edu.in/wp-content/uploads/2015/01/MANAOJ-T-CS.jpg" class="se_f_photo"><h6>Mr. MANOJ T</h6>				
+            <p>Assistant Professor(Senior)</p>
+        </div><a class="black" target="_blank" href="https://sode-edu.in/faculties/manoj-t/" rel="bookmark" title="Mr. MANOJ T">View More</a>
+        
+    </div>
+        <div class="col-md-4 col-lg-4 ">
+        
+        <div class="im">
+            <img src="https://sode-edu.in/wp-content/uploads/2015/01/SWATHI-PRABHU-CS.jpg" class="se_f_photo"><h6>Ms. SWATHI PRABHU</h6>				
+            <p>Assistant Professor </p>
+        </div><a class="black" target="_blank" href="https://sode-edu.in/faculties/swathi-prabhu/" rel="bookmark" title="Ms. SWATHI PRABHU">View More</a>
+        
+    </div>
+        <div class="col-md-4 col-lg-4 ">
+        
+        <div class="im">
+            <img src="https://sode-edu.in/wp-content/uploads/2015/01/SINDHURA-CS.jpg" class="se_f_photo"><h6>Ms. SINDHURA D N</h6>				
+            <p>Assistant Professor </p>
+        </div><a class="black" target="_blank" href="https://sode-edu.in/faculties/sindhura-d-n/" rel="bookmark" title="Ms. SINDHURA D N">View More</a>
+        
+    </div>
+        <div class="col-md-4 col-lg-4 ">
+        
+        <div class="im">
+            <img src="https://sode-edu.in/wp-content/uploads/2020/05/Ms.-Dhanya-Shenoy.jpg" class="se_f_photo"><h6>Ms. DHANYA SHENOY</h6>				
+            <p>Assistant Professor </p>
+        </div><a class="black" target="_blank" href="https://sode-edu.in/faculties/dhanya-shenoy/" rel="bookmark" title="Ms. DHANYA SHENOY">View More</a>
+        
+    </div>
+        <div class="col-md-4 col-lg-4 ">
+        
+        <div class="im">
+            <img src="https://sode-edu.in/wp-content/uploads/2021/09/Sowmya-CSE-1.jpg" class="se_f_photo"><h6>Ms. SOWMYA</h6>				
+            <p>Assistant Professor</p>
+        </div><a class="black" target="_blank" href="https://sode-edu.in/faculties/sowmya-n-h/" rel="bookmark" title="Ms. SOWMYA">View More</a>
+        
+    </div>
+        <div class="col-md-4 col-lg-4 ">
+        
+        <div class="im">
+            <img src="https://sode-edu.in/wp-content/uploads/2021/09/Sadananda-CSE-1.jpg" class="se_f_photo"><h6>Mr. SADANANDA L</h6>				
+            <p>Assistant Professor(Senior)</p>
+        </div><a class="black" target="_blank" href="https://sode-edu.in/faculties/sadananda-l/" rel="bookmark" title="Mr. SADANANDA L">View More</a>
+        
+    </div>
+        <div class="col-md-4 col-lg-4 ">
+        
+        <div class="im">
+            <img src="https://sode-edu.in/wp-content/uploads/2021/09/Yashaswini-AS-CS-1.jpg" class="se_f_photo"><h6>Ms. YASHASWINI A.S</h6>				
+            <p>Assistant Professor</p>
+        </div><a class="black" target="_blank" href="https://sode-edu.in/faculties/yashaswini-a-s/" rel="bookmark" title="Ms. YASHASWINI A.S">View More</a>
+        
+    </div>
+        <div class="col-md-4 col-lg-4 ">
+        
+        <div class="im">
+            <img src="https://sode-edu.in/wp-content/uploads/2022/04/Vijetha1-CSE.jpg" class="se_f_photo"><h6>Ms. VIJETHA</h6>				
+            <p>Assistant Professor </p>
+        </div><a class="black" target="_blank" href="https://sode-edu.in/faculties/ms-vijetha/" rel="bookmark" title="Ms. VIJETHA">View More</a>
+        
+    </div>
+        <div class="col-md-4 col-lg-4 ">
+        
+        <div class="im">
+            <img src="https://sode-edu.in/wp-content/uploads/2022/04/Soundarya1-CSE.jpg" class="se_f_photo"><h6>Ms. SOUNDHARYA R</h6>				
+            <p>Assistant Professor </p>
+        </div><a class="black" target="_blank" href="https://sode-edu.in/faculties/ms-soundharya-r/" rel="bookmark" title="Ms. SOUNDHARYA R">View More</a>
+        
+    </div>
+        <div class="col-md-4 col-lg-4 ">
+       
+        <div class="im">
+            <img src="https://sode-edu.in/wp-content/uploads/2022/09/Preethi-CSE.jpg" class="se_f_photo"><h6>Mrs. PREETHI M.</h6>				
+            <p>Assistant Professor</p>
+        </div> <a class="black" target="_blank" href="https://sode-edu.in/faculties/mr-preethi-m/" rel="bookmark" title="Mrs. PREETHI M.">View More</a>
+        
+    </div>
+        <div class="col-md-4 col-lg-4 ">
+        
+        <div class="im">
+            <img src="https://sode-edu.in/wp-content/uploads/2022/09/chaitra-CSE.jpg" class="se_f_photo"><h6>Mrs. CHAITRA BHAT M.</h6>				
+            <p>Assistant Professor </p>
+        </div><a class="black" target="_blank" href="https://sode-edu.in/faculties/mrs-chaitra-bhat-m/" rel="bookmark" title="Mrs. CHAITRA BHAT M.">View More</a>
+        
+    </div>
+        <div class="col-md-4 col-lg-4 ">
+        
+        <div class="im">
+            <img src="https://sode-edu.in/wp-content/uploads/2022/09/Raghavendra-CSE.jpg" class="se_f_photo"><h6>Mr. RAGHAVENDRA I. HEGDE</h6>				
+            <p>Assistant Professor </p>
+        </div><a class="black" target="_blank" href="https://sode-edu.in/faculties/mr-raghavendra-i-hegde/" rel="bookmark" title="Mr. RAGHAVENDRA I. HEGDE">View More</a>
+        
+    </div>
+        <div class="col-md-4 col-lg-4 ">
+        
+        <div class="im">
+            <img src="https://sode-edu.in/wp-content/uploads/2022/11/Vandana-U.png" class="se_f_photo"><h6>Ms. VANDANA U</h6>			
+            <p>Assistant Professor </p>
+        </div><a class="black" target="_blank" href="https://sode-edu.in/faculties/ms-vandana-u/" rel="bookmark" title="Ms. VANDANA U">View More</a>
+        
+    </div>
+            </div>
+</div>
+
+	</header>
+
+
+	{%endblock content%}

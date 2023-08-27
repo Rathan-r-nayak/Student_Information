@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+
+<style>
+	{%block subcss %}
+    #details{
+      margin:-60px 15px 15px 15px;
+      display: flex;
+      flex-direction: column;
+      /* border: 2px solid pink; */
+    }
+    
+    .key{
+		margin-left: 30px;
+		width: 130px;
+		padding: 10px;
+    }
+    .value{
+		border: 1px solid black;
+		border-radius: 5px;
+		padding: 10px;
+		width: 300px;
+
+    }
+    .det{
+      margin: 5px 5px 5px 15px;
+      display: flex;
+      flex-direction: row;
+	  
+    }
+	{%endblock subcss%}
+</style>
+
+
+{%block content%}
+
+	<nav><hr>
+		<div class="brand">{{student.name}}</div><br>
+		<div class="brand">{{student.usn}}</div><br>
+
+		
+		<div class="links">
+			<hr>
+			<a data-active="index" href="/studentapp/{{stid}}">Home</a>
+			<a data-active="products" href="/studentapp/info/{{stid}}" style="background: #007bff;color: #fff;">Info</a>
+			<a data-active="farm" href="/studentapp/marks/{{stid}}">Marks</a>
+			<a data-active="about" href="/studentapp/attendence/{{stid}}">Attendace</a>
+			<a data-active="contact" href="/studentapp/faculty/{{stid}}">Faculty</a>
+			<hr>
+		</div>
+	</nav>
+
+    <header>
+		<div id="details">
+			<div class="det">
+			  <p class="key"><b>NAME</b></p>
+			  <p class="value"> {{student.name}}</p>
+			</div>
+			<div class="det">
+			  <p class="key"><b>USN</b></p>
+			  <p class="value">{{student.usn}}</p>
+			</div>
+			<div class="det">
+			  <p class="key"><b>AGE</b></p>
+			  <p class="value">{{student.age}}</p>
+			</div>
+			<div class="det">
+			  <p class="key"><b>DOB </b></p>
+			  <p class="value">{{student.dob}}</p>
+			</div>
+			<div class="det">
+			<p class="key"><b>BRANCH</b></p>
+			<p class="value">{{student.branch}}</p>
+			</div>
+			<div class="det">
+			<p class="key"><b>SEMESTER</b></p>
+			<p class="value">{{student.sem}}</p>
+			</div>
+			<div class="det">
+				<p class="key"><b>EMAIL</b></p>
+				<p class="value">{{auth.email}}</p>
+			</div>
+			<div class="det">
+				<p class="key"><b>USERNAME</b></p>
+				<p class="value">{{auth.username}}</p>
+			</div>
+			<div class="det">
+				<p class="key"><b>IS ACTIVE</b></p>
+				{%if auth.is_active%}
+				<img height=30px ,width=30px style="margin-top: 25px;" src="/static/active.png" alt="YES">
+				{%else%}
+				<img height=30px ,width=30px style="margin-top: 25px;" src="/static/inactive.png" alt="NO">
+				{%endif%}
+			</div>
+				
+		  </div>
+		  
+		  
+	</header>
+
+	{%endblock content%}

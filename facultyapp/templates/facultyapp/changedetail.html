@@ -1,0 +1,32 @@
+{% extends "main.html" %}
+
+<style>
+    {%block css%}
+
+    {%endblock css%}
+</style>
+
+{%block content%}
+<table>
+	<tr>
+	    <th class="th" style="width: 7%;">ID</th>
+	    <th class="th" style="width: 50%;">USER NAME</th>
+	    <th class="th" style="width: 50%;">EMAIL</th>
+	    <th class="th" style="width: 8%;">EDIT</th>
+    </tr>
+	{%for x in values%}
+	<tr>
+		<td class="td">{{x.id}}</td>
+		<td class="td">{{x.username}}</td>
+		<td class="td">{{x.email}}</td>
+		<td class="td"><button class="btn_edit"><img src="/static/edit.png" height="25px" alt=""></button></td>
+	</tr>
+	{%endfor%}
+</table>
+
+{%endblock content%}
+
+
+
+
+<!-- CREATE TABLE student(id INTEGER,usn varchar(10),fname VARCHAR(30),branch varchar(20),age INTEGER,dob date,PRIMARY KEY(id,usn),FOREIGN KEY(id) REFERENCES  -->

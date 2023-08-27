@@ -1,0 +1,108 @@
+{% extends "main.html" %}
+
+{%block title%}{%endblock title%}
+
+<style>
+{% block css %}
+
+    body{
+      background-color: black;
+      color: white;
+    }
+    #navbar_ul {
+      list-style-type: none;
+      margin: 0 -10px;
+      padding: 0;
+      overflow: hidden;
+      background-color: rgba(183, 219, 255, 0.572);
+      border: 2px solid black;
+      display: flex;
+      flex-direction: row;
+      flex-wrap:nowrap;
+    }
+    
+    .navbar {
+      float: left;
+    }
+    
+    .navbar_a {
+      display: block;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      padding: 10px 26px;
+      text-decoration: none;
+    }
+    
+    .navbar_a:hover {
+      background-color: rgba(0, 208, 255, 0.251);
+    }
+    #details{
+      margin-left: 10px;
+      display: flex;
+      flex-direction: column;
+      /* border: 2px solid pink; */
+    }
+    
+    .key{
+      width: 100px;
+      justify-content: center;
+      margin:10px 20px 0px 0px;
+      padding:18px 0px;
+    }
+    .value{
+      padding: 10px;
+      border: 1px solid aqua;
+      border-radius: 5px;
+    }
+    .det{
+      margin: 5px 5px 5px 15px;
+      display: flex;
+      flex-direction: row;
+    }
+{% endblock css %}
+</style>
+
+
+{% block content %}
+<h2>Rathan R Nayak</h2>
+<h3>4MW20CS062</h3>
+
+
+<ul id="navbar_ul">
+  <li class="navbar"><a onclick="display_info()" class="navbar_a">INFO</a></li>
+  <li class="navbar"><a onclick="display_info()" class="navbar_a">MARKS</a></li>
+  <li class="navbar"><a onclick="display_info()" class="navbar_a">ATTENDANCE</a></li>
+  <li class="navbar"><a onclick="display_info()" class="navbar_a">FACULTY</a></li>
+</ul>
+
+<div id="details">
+  <div class="det">
+    <p class="key"><b>NAME</b></p>
+    <p class="value"> RATHAN R NAYAK</p>
+  </div>
+  <div class="det">
+    <p class="key"><b>USN</b></p>
+    <p class="value">4MW20CS062</p>
+  </div>
+  <div class="det">
+    <p class="key"><b>AGE</b></p>
+    <p class="value">19</p>
+  </div>
+  <div class="det">
+    <p class="key"><b>DOB </b></p>
+    <p class="value">11-04-2003</p>
+  </div>
+  <div class="det">
+  <p class="key"><b>BRANCH</b></p>
+  <p class="value">CSE</p>
+  </div>
+  <div class="det">
+  <p class="key"><b>SEMESTER</b></p>
+  <p class="value">5</p>
+  </div>
+</div>
+
+
+
+
+{% endblock content %}

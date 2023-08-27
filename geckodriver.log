@@ -1,0 +1,327 @@
+1675058541986	geckodriver	INFO	Listening on 127.0.0.1:61527
+1675058545063	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61528" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ratha\\AppData\\Local\\Temp\\rust_mozprofileJpQoic"
+1675058545367	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675058545372	Marionette	INFO	Listening on port 61538
+Read port: 61538
+WebDriver BiDi listening on ws://127.0.0.1:61528
+1675058545485	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ratha\\AppData\\Local\\Temp\\rust_mozprofileJpQoic\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:61528/devtools/browser/79796fee-18a3-452d-ae06-bf75f0c2d215
+1675058550841	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[2023-01-30T06:02:32Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:02:32Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:02:32Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:02:32Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:02:32Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:02:32Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:02:34Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+1675058555382	Marionette	INFO	Stopped listening on port 61538
+Dynamically enable window occlusion 1
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1675058616242	geckodriver	INFO	Listening on 127.0.0.1:61631
+1675058619284	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61632" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ratha\\AppData\\Local\\Temp\\rust_mozprofilesRQ2ga"
+1675058619523	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675058619528	Marionette	INFO	Listening on port 61640
+WebDriver BiDi listening on ws://127.0.0.1:61632
+Read port: 61640
+1675058619738	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ratha\\AppData\\Local\\Temp\\rust_mozprofilesRQ2ga\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:61632/devtools/browser/c666e1cf-0f01-4af9-a7f9-5d55d36500f9
+1675058624719	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[2023-01-30T06:03:47Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:03:47Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:03:47Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:03:48Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:03:48Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:03:48Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[Child 96348, MediaDecoderStateMachine #1] WARNING: Decoder=151b1814e00 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:372
+[Child 96348, MediaDecoderStateMachine #1] WARNING: Decoder=151b1814e00 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006) - static MP4Metadata::ResultAndByteBuffer __cdecl mozilla::MP4Metadata::Metadata(mozilla::ByteStream *): Cannot parse metadata: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachineBase.cpp:164
+[Child 96348, MediaDecoderStateMachine #1] WARNING: Decoder=151a8210a00 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:372
+[Child 96348, MediaDecoderStateMachine #1] WARNING: Decoder=151a8210a00 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006) - static MP4Metadata::ResultAndByteBuffer __cdecl mozilla::MP4Metadata::Metadata(mozilla::ByteStream *): Cannot parse metadata: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachineBase.cpp:164
+1675059625564	Marionette	INFO	Stopped listening on port 61640
+Dynamically enable window occlusion 1
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+e-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ratha\\AppData\\Local\\Temp\\rust_mozprofilefM8smb"
+1675058747160	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675058747165	Marionette	INFO	Listening on port 61839
+WebDriver BiDi listening on ws://127.0.0.1:61830
+Read port: 61839
+1675058747384	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ratha\\AppData\\Local\\Temp\\rust_mozprofilefM8smb\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:61830/devtools/browser/0f0460cd-e672-472d-ba55-378134f81c46
+1675058753028	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[2023-01-30T06:05:54Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:05:54Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:05:54Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:05:54Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:05:54Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:05:54Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:05:55Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[Child 104080, MediaDecoderStateMachine #1] WARNING: Decoder=225c9431900 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:372
+[Child 104080, MediaDecoderStateMachine #1] WARNING: Decoder=225c9431900 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006) - static MP4Metadata::ResultAndByteBuffer __cdecl mozilla::MP4Metadata::Metadata(mozilla::ByteStream *): Cannot parse metadata: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachineBase.cpp:164
+1675059631771	Marionette	INFO	Stopped listening on port 61839
+Dynamically enable window occlusion 1
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+e-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ratha\\AppData\\Local\\Temp\\rust_mozprofilel99nzR"
+1675058799353	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675058799357	Marionette	INFO	Listening on port 61961
+WebDriver BiDi listening on ws://127.0.0.1:61952
+Read port: 61961
+1675058799573	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ratha\\AppData\\Local\\Temp\\rust_mozprofilel99nzR\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:61952/devtools/browser/8a743281-f885-4c18-a77d-f15aed99a50f
+1675058804666	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[2023-01-30T06:06:46Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:06:46Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:06:46Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:06:46Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:06:46Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:06:46Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:06:46Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:06:46Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+1675058820238	Marionette	INFO	Stopped listening on port 61961
+Dynamically enable window occlusion 1
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1675058821643	geckodriver	INFO	Listening on 127.0.0.1:62058
+1675058824713	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62059" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ratha\\AppData\\Local\\Temp\\rust_mozprofileYk6Cf1"
+1675058824967	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675058824971	Marionette	INFO	Listening on port 62068
+WebDriver BiDi listening on ws://127.0.0.1:62059
+Read port: 62068
+1675058825155	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ratha\\AppData\\Local\\Temp\\rust_mozprofileYk6Cf1\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:62059/devtools/browser/f678b5aa-6d09-4fa3-b51c-fc977052e6c9
+1675058826742	Marionette	INFO	Stopped listening on port 62068
+Dynamically enable window occlusion 1
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.jsm", 230))
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+console.error: (new RemoteSettingsWorkerError("Error: Can't import when we've started shutting down.", "resource://services-settings/RemoteSettingsWorker.jsm", 48))
+console.error: (new Error("IndexedDB: main/doh-config getLastModified() IndexedDB:  execute() The application is shutting down", "resource://services-settings/IDBHelpers.jsm", 18))
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "DoHController: clear state and remove observers"
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
+_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
+send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
+submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
+sendPing@resource://gre/modules/EventPing.jsm:51:30
+_submitPing@resource://gre/modules/EventPing.jsm:229:12
+shutdown@resource://gre/modules/EventPing.jsm:112:10
+_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:940:31
+shutdown/<@resource://gre/modules/TelemetryControllerParent.jsm:1010:24
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
+_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
+send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
+submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
+saveShutdownPings@resource://gre/modules/TelemetrySession.jsm:982:34
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1232:20
+cleanup@resource://gre/modules/TelemetrySession.jsm:1239:9
+shutdownChromeProcess@resource://gre/modules/TelemetrySession.jsm:1256:14
+shutdown@resource://gre/modules/TelemetrySession.jsm:247:17
+_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:959:35
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
+_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
+send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
+submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
+saveShutdownPings@resource://gre/modules/TelemetrySession.jsm:1014:36
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1232:20
+cleanup@resource://gre/modules/TelemetrySession.jsm:1239:9
+shutdownChromeProcess@resource://gre/modules/TelemetrySession.jsm:1256:14
+shutdown@resource://gre/modules/TelemetrySession.jsm:247:17
+_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:959:35
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  TelemetryController: shutting down
+          Phase: profile-before-change-telemetry
+          State: Error getting state: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange" at addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+getShutdownState@resource://gre/modules/TelemetrySend.jsm:1692:7
+getShutdownState@resource://gre/modules/TelemetrySend.jsm:374:30
+_getState@resource://gre/modules/TelemetryControllerParent.jsm:1058:38
+setupTelemetry/<@resource://gre/modules/TelemetryControllerParent.jsm:917:18
+safeGetState@resource://gre/modules/AsyncShutdown.jsm:254:17
+Barrier/_internalAddBlocker/promise<@resource://gre/modules/AsyncShutdown.jsm:773:20
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.jsm:721:5
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.jsm:249:17
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1235:42
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+1675059068748	geckodriver	INFO	Listening on 127.0.0.1:62225
+1675059071800	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62226" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ratha\\AppData\\Local\\Temp\\rust_mozprofileCuV4uG"
+1675059072054	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675059072059	Marionette	INFO	Listening on port 62235
+WebDriver BiDi listening on ws://127.0.0.1:62226
+Read port: 62235
+1675059072234	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ratha\\AppData\\Local\\Temp\\rust_mozprofileCuV4uG\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:62226/devtools/browser/a6371f72-375e-4bd9-bef8-43ba3ae19e99
+1675059077994	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[2023-01-30T06:11:19Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:11:19Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:11:19Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:11:19Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:11:20Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:11:20Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[Child 104856, MediaDecoderStateMachine #1] WARNING: Decoder=1e887a9c000 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:372
+[Child 104856, MediaDecoderStateMachine #1] WARNING: Decoder=1e887a9c000 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006) - static MP4Metadata::ResultAndByteBuffer __cdecl mozilla::MP4Metadata::Metadata(mozilla::ByteStream *): Cannot parse metadata: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachineBase.cpp:164
+1675059635585	Marionette	INFO	Stopped listening on port 62235
+Dynamically enable window occlusion 1
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+e-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ratha\\AppData\\Local\\Temp\\rust_mozprofileqLw2Zx"
+1675059120322	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675059120326	Marionette	INFO	Listening on port 62329
+WebDriver BiDi listening on ws://127.0.0.1:62321
+Read port: 62329
+1675059120514	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ratha\\AppData\\Local\\Temp\\rust_mozprofileqLw2Zx\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:62321/devtools/browser/b90dbfce-f956-428e-b4b7-a5354f843920
+1675059124216	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[2023-01-30T06:12:05Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:12:05Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:12:05Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:12:05Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:12:05Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:12:05Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:12:05Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[Child 102052, MediaDecoderStateMachine #1] WARNING: Decoder=2068f8ca200 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:372
+[Child 102052, MediaDecoderStateMachine #1] WARNING: Decoder=2068f8ca200 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006) - static MP4Metadata::ResultAndByteBuffer __cdecl mozilla::MP4Metadata::Metadata(mozilla::ByteStream *): Cannot parse metadata: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachineBase.cpp:164
+1675059151064	Marionette	INFO	Stopped listening on port 62329
+Dynamically enable window occlusion 1
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1675059178046	geckodriver	INFO	Listening on 127.0.0.1:62429
+1675059181118	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62430" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ratha\\AppData\\Local\\Temp\\rust_mozprofilekMKfRo"
+1675059181451	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675059181455	Marionette	INFO	Listening on port 62440
+WebDriver BiDi listening on ws://127.0.0.1:62430
+Read port: 62440
+1675059181671	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ratha\\AppData\\Local\\Temp\\rust_mozprofilekMKfRo\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:62430/devtools/browser/c54cd8cd-58d2-4d33-b2b9-28fa296d7203
+1675059186225	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[2023-01-30T06:13:07Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:13:07Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:13:07Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:13:07Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:13:07Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:13:07Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:13:07Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:13:07Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+1675059209061	Marionette	INFO	Stopped listening on port 62440
+Dynamically enable window occlusion 1
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1675059439050	geckodriver	INFO	Listening on 127.0.0.1:62621
+1675059442104	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62622" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ratha\\AppData\\Local\\Temp\\rust_mozprofileijhpio"
+1675059442379	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675059442384	Marionette	INFO	Listening on port 62631
+Read port: 62631
+WebDriver BiDi listening on ws://127.0.0.1:62622
+1675059442496	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ratha\\AppData\\Local\\Temp\\rust_mozprofileijhpio\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:62622/devtools/browser/f620d15b-3bb5-481b-8ce2-9b7bf9a413e2
+1675059447191	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[2023-01-30T06:17:28Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:17:28Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:17:28Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:17:28Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:17:28Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:17:28Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:17:30Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[Child 99904, MediaDecoderStateMachine #1] WARNING: Decoder=2e9b6132a00 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:372
+[Child 99904, MediaDecoderStateMachine #1] WARNING: Decoder=2e9b6132a00 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006) - static MP4Metadata::ResultAndByteBuffer __cdecl mozilla::MP4Metadata::Metadata(mozilla::ByteStream *): Cannot parse metadata: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachineBase.cpp:164
+1675059637800	Marionette	INFO	Stopped listening on port 62631
+Dynamically enable window occlusion 1
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+e-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ratha\\AppData\\Local\\Temp\\rust_mozprofileFtrjxf"
+1675059478254	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675059478258	Marionette	INFO	Listening on port 62730
+WebDriver BiDi listening on ws://127.0.0.1:62722
+Read port: 62730
+1675059478483	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ratha\\AppData\\Local\\Temp\\rust_mozprofileFtrjxf\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:62722/devtools/browser/8079b536-7a25-495b-9a48-7adafa622e31
+1675059484335	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[2023-01-30T06:18:06Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:18:06Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:18:06Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:18:06Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:18:06Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:18:06Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:18:06Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-01-30T06:18:06Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+1675059516009	Marionette	INFO	Stopped listening on port 62730
+Dynamically enable window occlusion 1
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.

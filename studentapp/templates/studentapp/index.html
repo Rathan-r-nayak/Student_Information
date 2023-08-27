@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+
+
+{%block font%}
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Secular+One&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Secular+One&display=swap" rel="stylesheet"> 
+
+{%endblock font%}
+
+
+<style>
+{%block subcss%}
+h3{
+	font-weight: bold;
+	font-size: 25px;
+	color:aqua
+}
+.course{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: aliceblue;
+}
+li{
+	font-family: Arial;
+	padding: 15px;
+	color: aliceblue;
+}
+.contact{
+	margin-top: 100px;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: aliceblue;
+}
+.contact p{
+	font-family: Arial;
+	color: aliceblue;
+}
+header{
+	
+	background: #03192f url('https://sode-edu.in/wp-content/themes/sode-20/images/college-logo-bg-2.png') no-repeat center;
+}
+
+
+
+{%endblock subcss%}
+</style>
+
+{%block content%}
+	<nav><hr>
+		<div class="brand">{{student.name}}</div><br>
+		<div class="brand">{{student.usn}}</div><br>
+
+		
+		<div class="links">
+			<hr>
+			<a data-active="index" href="/studentapp/{{stid}}" style="background: #007bff;color: #fff;">Home</a>
+			<a data-active="products" href="/studentapp/info/{{stid}}">Info</a>
+			<a data-active="farm" href="/studentapp/marks/{{stid}}">Marks</a>
+			<a data-active="about" href="/studentapp/attendence/{{stid}}">Attendace</a>
+			<a data-active="contact" href="/studentapp/faculty/{{stid}}">Faculty</a>
+			<hr>
+		</div>
+	</nav>
+
+
+
+    <header >
+		<div class="course">
+		<h3>Courses</h3>
+		<ul >
+			<li>ARITFICIAL INTELIGENCE AND MACHINE LEARNING</li>
+			<li>ATIFICIAL INTELIGENCE AND DATASCIENCE</li>
+			<li>CIVIL ENGINEERING</li>
+			<li>COMPUTER SCIENCE AND ENGINEERING</li>
+			<li>ELECTRONICS AND COMMUNICATION ENGINEERING</li>
+			<li>MECHANICAL ENGINEERING</li>
+		</ul>
+	</div>
+	<div class="contact">
+		<h3>Contact Us</h3>
+		<p>Shri Madhwa Vadiraja Institute of Technology and Management</p>
+		<p>Vishwothama Nagar, Bantakal</p>
+		<p>Udupi - 574 115, Karnataka, India</p>
+		<p>Tel: +91 9611615001</p>
+		<p>Email: info@sode-edu.in </p>
+	</div>
+	</header>
+
+{%endblock content%}
